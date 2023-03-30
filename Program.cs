@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 namespace DummyDB
 {
     public class Program
-    { 
+    {
         public static void Main(string[] args)
         {
             TableScheme scheme = TableScheme.ReadFile(".\\book.json");
@@ -14,7 +14,7 @@ namespace DummyDB
             //    Console.WriteLine();
             //}
             Table table = ReadTable.Read(scheme, "\\books.csv");
-            Console.WriteLine(table.Rows[0].Data.Keys);
+            Console.WriteLine(table.Rows[0].Data[scheme.Columns[2]]);
             
         }
     }
@@ -30,6 +30,7 @@ namespace DummyDB
 
     class Table
     {
+        public TableScheme Scheme { get; set; }
         public List<Row> Rows { get; set; }
     }
 

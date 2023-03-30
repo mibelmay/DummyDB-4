@@ -16,6 +16,7 @@
             string[] data = File.ReadAllLines(Directory.GetCurrentDirectory() + path);
             Table table = new Table();
             table.Rows = new List<Row>();
+            table.Scheme = scheme;
 
             for (int i = 0; i < data.Length; i++)
             {
