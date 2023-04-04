@@ -10,7 +10,7 @@ namespace DummyDB
 
             Table table = ReadTable.Read(scheme, "\\books.csv");
             Console.WriteLine(table.Rows[0].Data[scheme.Columns[2]]);
-            
+
         }
     }
 
