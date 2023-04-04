@@ -1,13 +1,5 @@
 ﻿namespace DummyDB
 {
-    //enum ColumnType
-    //{
-    //    String,
-    //    Int,
-    //    Uint,
-    //    Double,
-    //    DateTime
-    //}
 
     class ReadTable
     {
