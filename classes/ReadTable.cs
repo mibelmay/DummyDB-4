@@ -52,9 +52,7 @@
                         row.Data.Add(scheme.Columns[j], line[j]);
                         break;
                 }
-
             }
-
             return row;
         }
 
